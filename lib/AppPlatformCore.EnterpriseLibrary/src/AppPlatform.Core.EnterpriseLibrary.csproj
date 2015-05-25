@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E222BFAD-F51E-4289-864E-5A15A8DF706D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppPlatform.Core.EnterpriseLibrary</RootNamespace>
+    <AssemblyName>AppPlatform.Core.EnterpriseLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'New|AnyCPU' ">
+    <OutputPath>bin\New\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'New|x86' ">
+    <OutputPath>bin\x86\New\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.2\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IdentityModel\Geneva\Microsoft.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.PolicyInjection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.CallHandlers, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.CallHandlers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.CallHandlers.Configuration.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.CallHandlers.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.Configuration.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MsEntLib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archive\GZip.cs" />
+    <Compile Include="Archive\PackageWrapper.cs" />
+    <Compile Include="Certificate\CertificateUtil.cs" />
+    <Compile Include="Collections\Enumerable.cs" />
+    <Compile Include="Collections\ThreadSafeDictionary.cs" />
+    <Compile Include="Comparision\DataComparer.cs" />
+    <Compile Include="Comparision\IComparableData.cs" />
+    <Compile Include="Comparision\ILIstCompare.cs" />
+    <Compile Include="Comparision\ListChange.cs" />
+    <Compile Include="Comparision\ListCompare.cs" />
+    <Compile Include="Comparision\OldNewValuePair.cs" />
+    <Compile Include="Comparision\XmlCompare.cs" />
+    <Compile Include="Configuration\ConfigurationReader.cs" />
+    <Compile Include="Configuration\IntegerSetting.cs" />
+    <Compile Include="Configuration\ConfigurationSetting.cs" />
+    <Compile Include="DatabaseUtility\CachingManager.cs" />
+    <Compile Include="DatabaseUtility\ConfigConnectionStringProvider.cs" />
+    <Compile Include="DatabaseUtility\MultiDictionary.cs" />
+    <Compile Include="DatabaseUtility\Database.cs" />
+    <Compile Include="DatabaseUtility\DbColumnNamesMap.cs" />
+    <Compile Include="DatabaseUtility\DbStoredProcedureNamesMap.cs" />
+    <Compile Include="DatabaseUtility\DotNetSqlTypesMapping.cs" />
+    <Compile Include="DatabaseUtility\ICachingManager.cs" />
+    <Compile Include="DatabaseUtility\IConnectionStringProvider.cs" />
+    <Compile Include="DatabaseUtility\IDatabaseActivityLogger.cs" />
+    <Compile Include="DatabaseUtility\IDataRead.cs" />
+    <Compile Include="DatabaseUtility\IDatabase.cs" />
+    <Compile Include="DatabaseUtility\IDbSessionContext.cs" />
+    <Compile Include="DatabaseUtility\IKeyAccessStatement.cs" />
+    <Compile Include="DatabaseUtility\ISQLExceptionProcessor.cs" />
+    <Compile Include="Diagnostics\Assert.cs" />
+    <Compile Include="Diagnostics\Safe.cs" />
+    <Compile Include="Drawing\Printing\RtfPrinter.cs" />
+    <Compile Include="Encryption\Rot13.cs" />
+    <Compile Include="ExceptionHandling\ExceptionProcessors.cs" />
+    <Compile Include="ExceptionHandling\IExceptionProcessor.cs" />
+    <Compile Include="Exceptions\ConcurrencyException.cs" />
+    <Compile Include="Exceptions\DatabaseTimeoutException.cs" />
+    <Compile Include="Extensions\ByteArrayExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DecimalExtensions.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Extensions\ICollectionExtensions.cs" />
+    <Compile Include="Extensions\XContainerExtensions.cs" />
+    <Compile Include="IO\IOHelper.cs" />
+    <Compile Include="Linq\Expressions\DistinctExpression.cs" />
+    <Compile Include="Linq\Expressions\ExpressionUtility.cs" />
+    <Compile Include="Linq\Expressions\OrderByExpression.cs" />
+    <Compile Include="Linq\XDocumentExtension\XDocument.cs" />
+    <Compile Include="Logging\AdonetIntervalAppender.cs" />
+    <Compile Include="Logging\AsynchronousFileAppender.cs" />
+    <Compile Include="Logging\DbWriterFactory.cs" />
+    <Compile Include="Logging\HslLogEntry.cs" />
+    <Compile Include="Logging\IDbLogWriter.cs" />
+    <Compile Include="Logging\ILog4NetManager.cs" />
+    <Compile Include="Logging\Log4NetManager.cs" />
+    <Compile Include="Logging\LoggingFilter.cs" />
+    <Compile Include="Logging\MsmqRawTraceListener.cs" />
+    <Compile Include="Logging\NullDbWriter.cs" />
+    <Compile Include="Messaging\RawMessageFormatter.cs" />
+    <Compile Include="Object\Activator.cs" />
+    <Compile Include="Object\ObjectCloner.cs" />
+    <Compile Include="Object\ObjectHelper.cs" />
+    <Compile Include="Object\SafeCast.cs" />
+    <Compile Include="Patterns\Gof\ICommand.cs" />
+    <Compile Include="Performance\StopWatch.cs" />
+    <Compile Include="PolicyInjectionExtension\CustomCallHandler.cs" />
+    <Compile Include="Patterns\Gof\IDecorator.cs" />
+    <Compile Include="PolicyInjectionExtension\MethodStopWatch.cs" />
+    <Compile Include="PolicyInjectionExtension\PolicyWrapDecorator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceAccess\EntityMapperExtended.cs" />
+    <Compile Include="ResourceAccess\ListChange.cs" />
+    <Compile Include="ResourceAccess\ListQueryResult.cs" />
+    <Compile Include="ResourceAccess\SqlCommand.cs" />
+    <Compile Include="ResourceAccess\EntityManagerBase.cs" />
+    <Compile Include="ResourceAccess\EntityReadManagerBase.cs" />
+    <Compile Include="ResourceAccess\IEntityManager.cs" />
+    <Compile Include="ResourceAccess\IEntityMapperExtended.cs" />
+    <Compile Include="Security\Impersonation.cs" />
+    <Compile Include="Serialization\BinarySerializer.cs" />
+    <Compile Include="Serialization\DCAttributeHelper.cs" />
+    <Compile Include="Serialization\DCSerializer.cs" />
+    <Compile Include="Serialization\XMLSerializer.cs" />
+    <Compile Include="Services\ClaimsAwareServiceProxy.cs" />
+    <Compile Include="Services\Configuration\ICredentialsConfigurator.cs" />
+    <Compile Include="Services\Context\IMessageHeaderBuilder.cs" />
+    <Compile Include="Services\CustomBehaviors\ContractFaultContractAttribute.cs" />
+    <Compile Include="Services\CustomBehaviors\PolicyInjectionBehavior.cs" />
+    <Compile Include="Services\CustomBehaviors\ServiceFaultContractAttribute.cs" />
+    <Compile Include="Services\CustomBindings\Custom2007FederationBinding.cs" />
+    <Compile Include="Services\CustomBindings\Custom2007FederationBindingElement.cs" />
+    <Compile Include="Services\Execution\RetryConfiguration.cs" />
+    <Compile Include="Services\Execution\RetryExecutionWrapper.cs" />
+    <Compile Include="Services\Execution\IActionExecutionWrapper.cs" />
+    <Compile Include="Services\Execution\ServiceProxyWrapper.cs" />
+    <Compile Include="Services\Extension\ChannelFactoryExtension.cs" />
+    <Compile Include="Services\Helper\NameHelper.cs" />
+    <Compile Include="Services\IdentityModel\ClaimsBasedServiceHostFactory.cs" />
+    <Compile Include="Services\IdentityModel\CustomRequestConfigHelper.cs" />
+    <Compile Include="Services\IdentityModel\CustomTokenRequestSerializer.cs" />
+    <Compile Include="Services\IdentityModel\ICustomRequestParameters.cs" />
+    <Compile Include="Services\IdentityModel\ISTSConfigProvider.cs" />
+    <Compile Include="Services\IdentityModel\ITokenCustomRequestProvider.cs" />
+    <Compile Include="Services\IdentityModel\ITokenProvider.cs" />
+    <Compile Include="Services\IdentityModel\Logging\ITokenRequestLogger.cs" />
+    <Compile Include="Services\IdentityModel\Logging\TokenRequestLogData.cs" />
+    <Compile Include="Services\IdentityModel\RemoteTokenProvider.cs" />
+    <Compile Include="Services\Configuration\STSConfigProvider.cs" />
+    <Compile Include="Services\IdentityModel\TokenRequestParamDescription.cs" />
+    <Compile Include="Services\IdentityModel\TokenRequestParameterBuilder.cs" />
+    <Compile Include="Services\IRemoteServiceProvider.cs" />
+    <Compile Include="Services\IRemoteServiceProxy.cs" />
+    <Compile Include="Services\MessageInterception\SimpleMessageInterceptorPlugin.cs" />
+    <Compile Include="Services\MessageInterception\SimpleMessageInterceptorPluginExtension.cs" />
+    <Compile Include="Services\PolicyInjection\PolicyInjectionAttribute.cs" />
+    <Compile Include="Services\PolicyInjection\PolicyInjectionBehavior.cs" />
+    <Compile Include="Services\PolicyInjection\PolicyInjectionBehaviorElement.cs" />
+    <Compile Include="Services\PolicyInjection\PolicyInjectionInstanceProvider.cs" />
+    <Compile Include="Services\ReferencePreserving\ReferencePreservingDataContractFormatAttribute.cs" />
+    <Compile Include="Services\ReferencePreserving\ReferencePreservingDataContractSerializerOperationBehavior.cs" />
+    <Compile Include="Services\ServiceHostUtilities\IServiceHostConfigurator.cs" />
+    <Compile Include="Services\ServiceProvider.cs" />
+    <Compile Include="Services\ServiceProxy.cs" />
+    <Compile Include="Systems\OSVersionInfo.cs" />
+    <Compile Include="Threading\Checks.cs" />
+    <Compile Include="Threading\Locks.cs" />
+    <Compile Include="Threading\RequestLocalStorage.cs" />
+    <Compile Include="Transactions\ITransactionScope.cs" />
+    <Compile Include="DatabaseUtility\DatabaseListener.cs" />
+    <Compile Include="DatabaseUtility\DataReaderWrapper.cs" />
+    <Compile Include="DatabaseUtility\DbCommandHelper.cs" />
+    <Compile Include="DatabaseUtility\SqlCommandParameterBuilder.cs" />
+    <Compile Include="Transactions\ResouceManager.cs" />
+    <Compile Include="Transactions\Transactional.cs" />
+    <Compile Include="Transactions\TransactionalArray.cs" />
+    <Compile Include="Transactions\TransactionalCollection.cs" />
+    <Compile Include="Transactions\TransactionalDictionary.cs" />
+    <Compile Include="Transactions\TransactionalLinkedList.cs" />
+    <Compile Include="Transactions\TransactionalList.cs" />
+    <Compile Include="Transactions\TransactionalLock.cs" />
+    <Compile Include="Transactions\TransactionalQueue.cs" />
+    <Compile Include="Transactions\TransactionalSortedDictionary.cs" />
+    <Compile Include="Transactions\TransactionalSortedList.cs" />
+    <Compile Include="Transactions\TransactionalStack.cs" />
+    <Compile Include="Transactions\TransactionalValueType.cs" />
+    <Compile Include="DatabaseUtility\CustomTypeNames.cs" />
+    <Compile Include="Types\BigInteger.cs" />
+    <Compile Include="Types\Pair.cs" />
+    <Compile Include="Types\Utility\TypeUtility.cs" />
+    <Compile Include="Unity\ExtendedUnityContainer.cs" />
+    <Compile Include="Unity\IExtendedUnityContainer.cs" />
+    <Compile Include="Unity\IocProvider.cs" />
+    <Compile Include="Windows\Forms\Binder.cs" />
+    <Compile Include="Windows\Forms\Controls\ActionControlState.cs" />
+    <Compile Include="Windows\Forms\Controls\ControlStateMode.cs" />
+    <Compile Include="Windows\Forms\Controls\ControlSetter.cs" />
+    <Compile Include="Windows\Forms\Controls\AllControlsStates.cs" />
+    <Compile Include="Windows\Forms\Controls\ControlState.cs" />
+    <Compile Include="Windows\Forms\Controls\ControlStateModeWalker.cs" />
+    <Compile Include="Windows\Forms\Controls\ControlWalker.cs" />
+    <Compile Include="Windows\Forms\Controls\IActionControl.cs" />
+    <Compile Include="Windows\Forms\Controls\IInputControl.cs" />
+    <Compile Include="Windows\Forms\Controls\InputControlState.cs" />
+    <Compile Include="Windows\Forms\Controls\IValidation.cs" />
+    <Compile Include="Windows\Forms\Messages\ChangeSetMessageBuilder.cs" />
+    <Compile Include="Windows\Forms\Messages\ILabelProvider.cs" />
+    <Compile Include="Windows\Forms\Messages\LabelFromLabel.cs" />
+    <Compile Include="Windows\Forms\MetaForms\Concept\Concept.cs" />
+    <Compile Include="Windows\Forms\MetaForms\Concept\ConceptType.cs" />
+    <Compile Include="Windows\Forms\MetaForms\FieldDefinition.cs" />
+    <Compile Include="Windows\Forms\MetaForms\IFormBuilder.cs" />
+    <Compile Include="Windows\Forms\MetaForms\MetaFormDefinition.cs" />
+    <Compile Include="Windows\Forms\MetaForms\Validation\ConceptValidator.cs" />
+    <Compile Include="Xml\XElementValueExtractor.cs" />
+    <Compile Include="Xml\XmlFileUtility.cs" />
+    <Compile Include="Xml\XmlUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logging\TraceListeners\" />
+    <Folder Include="Services\Fault\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
