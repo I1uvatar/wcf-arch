@@ -17,7 +17,8 @@ namespace BookService.ServiceImplementation
                 {
                     new Book()
                     {
-                        Author = "Lev Nikolajevič Tolstoj",
+                        Name= "War and Peace",
+                        Author = "Lev Nikolajevic Tolstoj",
                         BookID = 333,
                         Price = 33.1m
                     }
